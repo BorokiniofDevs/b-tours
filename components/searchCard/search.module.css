@@ -1,0 +1,23 @@
+.searchCard {
+  color: var(--bg);
+  font-size: 16px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  overflow-x: hidden;
+}
+.searchLabel {
+  padding-bottom: 10px;
+}
+.searchInput {
+  color: #a9a7a7;
+  font-size: 15px;
+  padding: 10px;
+  background: var(--bg);
+  height: 50px;
+  border-radius: 8px;
+  border: 0;
+  outline: none;
+}
