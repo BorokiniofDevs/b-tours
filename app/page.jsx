@@ -1,9 +1,13 @@
-import React from "react";
+"use client";
 import styles from "./page.module.css";
 import Image from "next/image";
 import SearchCard from "@/components/searchCard/SearchCard";
 import { infoItems, searchItems } from "@/utils/data";
-import ImageCard from "@/components/imageCard/ImageCard";
+import {
+  DestinationComponent,
+  InfoComponent,
+} from "@/components/heroCard/heroCard";
+import CarouselCard from "@/components/carousel/CarouselCard";
 
 const Home = () => {
   return (
@@ -36,9 +40,8 @@ const Home = () => {
         </div>
       </div>
 
-      {/* INF0 SESION */}
-
-      <div className={styles.infoContainer}>
+      {/* INF0 SESSION */}
+      {/* <div className={styles.infoContainer}>
         <div className={styles.infoText}>
           <h1 className={styles.infoHead}>Tour Types</h1>
           <div className={styles.stroke}>
@@ -59,7 +62,22 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
+
+      <InfoComponent
+        title="Tour Types"
+        subTitle="Adventure & Activity"
+        description="Explore thrilling destinations that will get your heart racing..."
+        infoItems={infoItems}
+      />
+
+      {/* DESTINATION SESSION */}
+      <DestinationComponent
+        title="Where to go"
+        subTitle="Popular destinations"
+        description="Explore our curated selection of the world's most sought-after travel spots in this diverse list of must-visit places. From iconic cities to pristine natural wonders, we've gathered the best destinations to ignite your wanderlust."
+        desItem={<CarouselCard />}
+      />
     </div>
   );
 };
