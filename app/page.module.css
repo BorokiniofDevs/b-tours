@@ -1,5 +1,6 @@
 .container {
   height: 100%;
+  gap: 100px;
 }
 .heroContainer {
   display: flex;
@@ -90,4 +91,14 @@
   transition: all 200ms ease-in-out;
 }
 
-/* INFO CONTAINER */
+@media (max-width: 500px) {
+  .empty {
+    display: none;
+  }
+  .mainText {
+    text-align: center;
+  }
+  .caps {
+    font-size: 30px;
+  }
+}

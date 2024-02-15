@@ -5,6 +5,7 @@
   justify-content: space-between;
   z-index: 2;
   color: var(--bg);
+  background-color: rebeccapurple;
 }
 .logo {
   display: flex;

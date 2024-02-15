@@ -41,28 +41,6 @@ const Home = () => {
       </div>
 
       {/* INF0 SESSION */}
-      {/* <div className={styles.infoContainer}>
-        <div className={styles.infoText}>
-          <h1 className={styles.infoHead}>Tour Types</h1>
-          <div className={styles.stroke}>
-            <div className={styles.strokeline}></div>
-            <h2 className={styles.infoTitle}>Adventure & Activity</h2>
-          </div>
-          <p className={styles.infoDesc}>
-            Explore thrilling destinations that will get your heart racing. From
-            rugged mountains to dense jungles, embark on unforgettable journeys
-            that will test your limits and create lasting memories. Dive into
-            the unknown, conquer nature's challenges, and write your own epic
-            tale of adventure.
-          </p>
-
-          <div className={styles.infoItems}>
-            {infoItems.map((item) => (
-              <ImageCard item={item} />
-            ))}
-          </div>
-        </div>
-      </div> */}
 
       <InfoComponent
         title="Tour Types"
