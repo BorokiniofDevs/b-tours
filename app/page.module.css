@@ -91,7 +91,7 @@
   transition: all 200ms ease-in-out;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .empty {
     display: none;
   }
@@ -100,5 +100,27 @@
   }
   .caps {
     font-size: 30px;
+    text-align: center;
+  }
+  .textContainer {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .searchContainer {
+    height: 60vh;
+    margin: auto;
+    width: 100%;
+    background-color: var(--green);
+  }
+  .searchCard {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+  .searchText {
+    font-size: 24px;
+    font-family: "Playfair Display";
   }
 }

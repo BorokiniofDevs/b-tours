@@ -66,6 +66,18 @@
   gap: 30px;
 }
 
+@media (max-width: 768px) {
+  .infoText {
+    height: max-content;
+  }
+  .strokeline {
+    display: none;
+  }
+  .infoItems {
+    flex-direction: column;
+  }
+}
+
 /* DESTINATION CONTAINER */
 .desContainer {
   display: flex;
