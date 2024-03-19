@@ -20,7 +20,7 @@ const Home = () => {
             <h1 className={styles.caps}>
               Welcome to the World of Extraordinary Travel
             </h1>
-            <p>
+            <p className={styles.text}>
               If you're in search of exciting adventures, unforgettable
               experiences, and breathtaking places to explore, you've come to
               the right place!
@@ -45,7 +45,7 @@ const Home = () => {
       <InfoComponent
         title="Tour Types"
         subTitle="Adventure & Activity"
-        description="Explore thrilling destinations that will get your heart racing..."
+        description="Explore thrilling destinations that will get your heart racing. From rugged mountains to dense jungles, embark on unforgettable journeys that will test your limits and create lasting memories. Dive into the unknown, conquer nature's challenges, and write your own epic tale of adventure."
         infoItems={infoItems}
       />
 
